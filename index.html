@@ -7,9 +7,7 @@
   <meta name="description" content="LiveBetter With AI Apps™ – A complete AI-powered life operating system. Starter, Full, and License Editions available." />
   <link rel="canonical" href="https://livebetterwithaiapps.com" />
   <style>
-    /* ——— STYLES UNCHANGED (FULL STYLE INCLUDED HERE) ——— */
-    /* I kept the full styling intact to ensure perfect Render compatibility */
-    
+    /* ——— CORE THEME VARIABLES ——— */
     :root {
       --bg: #030712;
       --bg-alt: #050b18;
@@ -27,47 +25,280 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: system-ui, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: radial-gradient(circle at top, #111827 0, #020617 55%);
       color: var(--text);
       line-height: 1.5;
     }
+
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
 
-    .page { min-height: 100vh; display: flex; flex-direction: column; }
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ——— HEADER / NAV ——— */
     header {
       border-bottom: 1px solid rgba(148, 163, 184, 0.25);
       backdrop-filter: blur(18px);
-      background: rgba(15, 23, 42, 0.75);
-      position: sticky; top: 0; z-index: 40;
+      background: rgba(15, 23, 42, 0.85);
+      position: sticky;
+      top: 0;
+      z-index: 40;
     }
+
     .nav {
-      max-width: 1120px; margin: 0 auto; padding: 0.85rem 1.25rem;
-      display: flex; align-items: center; justify-content: space-between;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    .nav-brand { display: flex; align-items: center; gap: 0.6rem; }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
     .logo-pill {
-      width: 34px; height: 34px; border-radius: 999px;
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
       background: radial-gradient(circle at 20% 0%, #facc15, #c9a95c 40%, #0f172a);
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: 0.9rem; color: #020617;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #020617;
     }
+
     .nav-title-main { font-weight: 600; font-size: 0.95rem; }
     .nav-title-sub { font-size: 0.75rem; color: var(--muted); }
-    .nav-links { display: flex; gap: 1rem; font-size: 0.85rem; color: var(--muted); }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
     .nav-links a:hover { color: var(--text); }
 
-    /* MANY STYLE RULES HERE — ALL RETAINED FROM YOUR ORIGINAL STYLES */
+    /* ——— LAYOUT ——— */
+    main {
+      flex: 1;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.75rem 1.25rem 3rem;
+    }
 
-    /* I’ve included the full stylesheet exactly as before to ensure 100% visual match. */
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.35rem;
+    }
+
+    p { color: var(--muted); }
+
+    /* ——— HERO ——— */
+    .hero {
+      display: grid;
+      gap: 2rem;
+      padding: 2.25rem 1.75rem;
+      background: radial-gradient(circle at top left, rgba(201,169,92,0.12), transparent 55%),
+                  radial-gradient(circle at bottom right, rgba(56,189,248,0.08), transparent 55%),
+                  #020617;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(148,163,184,0.25);
+      margin-bottom: 3rem;
+    }
+
+    .hero-copy h1 {
+      font-size: 2.1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-copy h1 span {
+      color: var(--accent);
+    }
+
+    .hero-lead {
+      margin-bottom: 1.25rem;
+      max-width: 34rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* ——— BUTTONS ——— */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #facc15, #c9a95c);
+      color: #111827;
+      box-shadow: 0 12px 30px rgba(250, 204, 21, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 45px rgba(250, 204, 21, 0.4);
+    }
+
+    /* ——— PRICING ——— */
+    #pricing {
+      margin-top: 2.5rem;
+    }
+
+    .pricing-card {
+      background: var(--card);
+      border-radius: var(--radius-md);
+      padding: 1.2rem 1.25rem;
+      border: 1px solid rgba(148,163,184,0.35);
+      margin-bottom: 1rem;
+    }
+
+    .pricing-card.highlight {
+      border-color: var(--accent);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.7);
+      background: radial-gradient(circle at top left, rgba(201,169,92,0.16), #020617);
+    }
+
+    .pricing-card p {
+      margin-bottom: 0.75rem;
+    }
+
+    .pricing-card .btn {
+      margin-top: 0.25rem;
+    }
+
+    /* ——— SUPPORT ——— */
+    #support {
+      background: var(--bg-alt);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.5rem;
+      border: 1px solid rgba(148,163,184,0.3);
+    }
+
+    #support p {
+      margin-bottom: 0.75rem;
+    }
+
+    #support a.mail-link {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    #support form {
+      margin-top: 0.75rem;
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    #support label {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    #support input,
+    #support textarea {
+      width: 100%;
+      padding: 0.55rem 0.6rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #020617;
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    #support textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    #support button {
+      justify-self: flex-start;
+      margin-top: 0.25rem;
+    }
+
+    /* ——— FOOTER ——— */
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.3);
+      padding: 1.25rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: auto;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* ——— RESPONSIVE ——— */
+    @media (max-width: 640px) {
+      .hero {
+        padding: 1.8rem 1.3rem;
+      }
+
+      .hero-copy h1 {
+        font-size: 1.7rem;
+      }
+
+      .nav {
+        padding-inline: 1rem;
+      }
+
+      .nav-links {
+        display: none; /* simplify mobile header */
+      }
+    }
   </style>
 </head>
 
 <body>
 <div class="page">
-
   <!-- ——— HEADER ——— -->
   <header>
     <div class="nav">
@@ -87,8 +318,9 @@
     </div>
   </header>
 
-  <!-- ——— HERO SECTION ——— -->
+  <!-- ——— MAIN ——— -->
   <main>
+    <!-- HERO -->
     <section class="hero" id="top">
       <div class="hero-copy">
         <h1>A complete <span>AI-powered life system</span> you control.</h1>
@@ -98,7 +330,10 @@
         </p>
 
         <div class="hero-actions">
-          <button class="btn btn-primary" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">View Pricing</button>
+          <button class="btn btn-primary"
+                  onclick="document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })">
+            View Pricing
+          </button>
         </div>
 
         <div class="hero-meta">
@@ -107,63 +342,90 @@
       </div>
     </section>
 
-    <!-- ——— PRODUCT SECTION (unchanged) ——— -->
+    <!-- PRODUCT SECTION -->
     <section id="product">
       <h2>The System</h2>
-      <p>A complete life operating system powered by AI clarity.</p>
+      <p>
+        A complete AI-powered life operating system designed to give you clarity, control, and leverage.
+        10 core modules, battle-tested prompts, and practical tools you can actually use.
+      </p>
     </section>
 
-    <!-- ——— PRICING SECTION WITH CHECKOUT LINKS ——— -->
+    <!-- PRICING SECTION -->
     <section id="pricing">
       <h2>Choose Your Edition</h2>
 
       <!-- STARTER -->
       <div class="pricing-card">
         <h3>Starter Edition — $39.99</h3>
-        <p>10 modules · Personal use</p>
-        <a href="YOUR_STARTER_LINK_HERE" class="btn btn-primary">Buy Starter – $39.99</a>
+        <p>10 modules · Personal use · Plug-and-play AI workflows.</p>
+        <a href="YOUR_STARTER_LINK_HERE" class="btn btn-primary">
+          Buy Starter – $39.99
+        </a>
       </div>
 
       <!-- FULL SYSTEM -->
       <div class="pricing-card highlight">
         <h3>Full System Edition — $135.99</h3>
-        <p>Modules · Templates · Prompts · Bonuses</p>
-        <a href="YOUR_FULL_LINK_HERE" class="btn btn-primary">Buy Full System – $135.99</a>
+        <p>All modules · Templates · Prompt packs · Upgrade bonuses.</p>
+        <a href="YOUR_FULL_LINK_HERE" class="btn btn-primary">
+          Buy Full System – $135.99
+        </a>
       </div>
 
       <!-- LICENSE EDITION -->
       <div class="pricing-card">
         <h3>License Edition — $239.99</h3>
-        <p>Commercial rights · Editable files · Sales tools</p>
-        <a href="YOUR_LICENSE_LINK_HERE" class="btn btn-primary">Get License Edition – $239.99</a>
+        <p>Commercial rights · Editable files · Sales assets to resell the entire system.</p>
+        <a href="YOUR_LICENSE_LINK_HERE" class="btn btn-primary">
+          Get License Edition – $239.99
+        </a>
       </div>
-
     </section>
 
-    <!-- ——— SUPPORT ——— -->
+    <!-- SUPPORT SECTION -->
     <section id="support">
       <h2>Support</h2>
-      <p>Need help? Email us anytime.</p>
+      <p>Need help, stuck on setup, or want to talk licensing?</p>
+      <p>
+        Email us directly at
+        <a class="mail-link" href="mailto:support@livebetterwithaiapps.com">
+          support@livebetterwithaiapps.com
+        </a>
+        and we’ll get back to you as soon as possible.
+      </p>
 
+      <!-- Simple mailto form (opens email client) -->
       <form action="mailto:support@livebetterwithaiapps.com" method="post" enctype="text/plain">
-        <label>Name</label>
-        <input name="name" required>
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+        </div>
 
-        <label>Email</label>
-        <input name="email" type="email" required>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
 
-        <label>Message</label>
-        <textarea name="message" required></textarea>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
 
-        <button class="btn btn-primary">Send</button>
+        <button type="submit" class="btn btn-primary">Send</button>
       </form>
     </section>
-
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>© <span id="year"></span> LiveBetter With AI Apps™. All rights reserved.</p>
-    <p>Contact: support@livebetterwithaiapps.com</p>
+    <p>
+      Contact:
+      <a href="mailto:support@livebetterwithaiapps.com">
+        support@livebetterwithaiapps.com
+      </a>
+    </p>
   </footer>
 </div>
 
