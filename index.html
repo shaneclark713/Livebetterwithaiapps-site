@@ -2,436 +2,806 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>LiveBetter With AI Apps™ – Use AI to your advantage</title>
+  <title>LiveBetter With AI Apps – Course Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="LiveBetter With AI Apps™ – A complete AI-powered life operating system. Starter, Full, and License Editions available." />
-  <link rel="canonical" href="https://livebetterwithaiapps.com" />
+  <meta name="description" content="LiveBetter With AI Apps™ – Credit, Crypto, Stocks, Tax, Travel and Everyday AI courses with Starter, Advanced, Master and License tiers plus complete bundles." />
+
   <style>
-    /* ——— CORE THEME VARIABLES ——— */
     :root {
-      --bg: #030712;
-      --bg-alt: #050b18;
-      --card: #0b1020;
-      --accent: #c9a95c;
-      --accent-soft: rgba(201, 169, 92, 0.15);
-      --border: #1f2937;
-      --text: #f9fafb;
-      --muted: #9ca3af;
-      --danger: #ef4444;
-      --success: #22c55e;
+      --bg: #050509;
+      --bg-alt: #0d0d15;
+      --card: #151522;
+      --card-alt: #191927;
+      --accent: #ff4bc0;
+      --accent-soft: rgba(255, 75, 192, 0.14);
+      --text: #f9f9ff;
+      --muted: #a5a5c3;
+      --border: #26263a;
+      --danger: #ff6961;
       --radius-lg: 18px;
-      --radius-md: 12px;
-      --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.6);
+      --shadow-soft: 0 14px 40px rgba(0, 0, 0, 0.55);
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #111827 0, #020617 55%);
+      font-family: var(--font-main);
+      background: radial-gradient(circle at top, #171728 0, #050509 52%);
       color: var(--text);
-      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
     }
 
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
     .page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* ——— HEADER / NAV ——— */
-    header {
-      border-bottom: 1px solid rgba(148, 163, 184, 0.25);
-      backdrop-filter: blur(18px);
-      background: rgba(15, 23, 42, 0.85);
-      position: sticky;
-      top: 0;
-      z-index: 40;
-    }
-
-    .nav {
       max-width: 1120px;
       margin: 0 auto;
-      padding: 0.85rem 1.25rem;
+      padding: 20px 16px 48px;
+    }
+
+    /* NAV */
+
+    .nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 8px 4px 18px;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(to bottom, rgba(5,5,9,0.96), rgba(5,5,9,0.75), transparent);
     }
 
-    .nav-brand {
+    .nav-left {
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 10px;
     }
 
     .logo-pill {
       width: 34px;
       height: 34px;
-      border-radius: 999px;
-      background: radial-gradient(circle at 20% 0%, #facc15, #c9a95c 40%, #0f172a);
+      border-radius: 10px;
+      background: radial-gradient(circle at 20% 0, #ffe1fb, #ff4bc0);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 700;
-      font-size: 0.9rem;
-      color: #020617;
+      color: #120018;
+      font-weight: 800;
+      font-size: 18px;
+      box-shadow: 0 7px 20px rgba(255, 75, 192, 0.55);
     }
 
-    .nav-title-main { font-weight: 600; font-size: 0.95rem; }
-    .nav-title-sub { font-size: 0.75rem; color: var(--muted); }
+    .brand-title {
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
 
-    .nav-links {
-      display: flex;
-      gap: 1rem;
-      font-size: 0.85rem;
+    .brand-sub {
+      font-size: 12px;
       color: var(--muted);
     }
 
-    .nav-links a:hover { color: var(--text); }
-
-    /* ——— LAYOUT ——— */
-    main {
-      flex: 1;
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 1.75rem 1.25rem 3rem;
+    .nav-links {
+      display: flex;
+      gap: 14px;
+      font-size: 13px;
+      color: var(--muted);
     }
 
-    section {
-      margin-bottom: 3rem;
+    .nav-links a {
+      padding: 6px 10px;
+      border-radius: 999px;
+      transition: background 0.18s, color 0.18s, transform 0.12s;
     }
 
-    h1, h2, h3 {
-      font-weight: 600;
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+      transform: translateY(-1px);
     }
 
-    h2 {
-      font-size: 1.6rem;
-      margin-bottom: 0.75rem;
+    .nav-cta {
+      display: none;
     }
 
-    h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.35rem;
+    @media (min-width: 780px) {
+      .nav-cta {
+        display: inline-flex;
+        font-size: 13px;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 16px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #ff4bc0, #ff9951);
+        color: #14010f;
+        font-weight: 600;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+      }
+
+      .nav-cta span {
+        font-size: 12px;
+        opacity: 0.86;
+      }
     }
 
-    p { color: var(--muted); }
+    /* HERO */
 
-    /* ——— HERO ——— */
     .hero {
       display: grid;
-      gap: 2rem;
-      padding: 2.25rem 1.75rem;
-      background: radial-gradient(circle at top left, rgba(201,169,92,0.12), transparent 55%),
-                  radial-gradient(circle at bottom right, rgba(56,189,248,0.08), transparent 55%),
-                  #020617;
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-soft);
-      border: 1px solid rgba(148,163,184,0.25);
-      margin-bottom: 3rem;
+      grid-template-columns: minmax(0, 1.5fr);
+      gap: 22px;
+      padding: 8px 0 28px;
     }
 
-    .hero-copy h1 {
-      font-size: 2.1rem;
-      margin-bottom: 0.75rem;
+    @media (min-width: 880px) {
+      .hero {
+        grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.1fr);
+        align-items: center;
+      }
     }
 
-    .hero-copy h1 span {
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 9px 5px 5px;
+      border-radius: 999px;
+      background: rgba(11, 11, 20, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 999px;
+      background: var(--accent-soft);
       color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
     }
 
-    .hero-lead {
-      margin-bottom: 1.25rem;
-      max-width: 34rem;
+    .hero h1 {
+      font-size: 30px;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 780px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, #ffb5ff, #ff4bc0, #ffd27d);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-sub {
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 520px;
+      margin-bottom: 18px;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 0.75rem;
+      gap: 10px;
+      margin-bottom: 16px;
     }
 
-    .hero-meta {
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    /* ——— BUTTONS ——— */
-    .btn {
+    .btn-primary,
+    .btn-ghost {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0.6rem 1.2rem;
+      gap: 6px;
       border-radius: 999px;
-      border: 1px solid transparent;
-      font-size: 0.9rem;
+      padding: 9px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
       cursor: pointer;
-      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+      text-decoration: none;
+      transition: transform 0.12s, box-shadow 0.16s, background 0.16s, opacity 0.16s;
       white-space: nowrap;
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #facc15, #c9a95c);
-      color: #111827;
-      box-shadow: 0 12px 30px rgba(250, 204, 21, 0.35);
+      background: linear-gradient(135deg, #ff4bc0, #ff9951);
+      color: #130010;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.55);
     }
 
     .btn-primary:hover {
       transform: translateY(-1px);
-      box-shadow: 0 18px 45px rgba(250, 204, 21, 0.4);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
     }
 
-    /* ——— PRICING ——— */
-    #pricing {
-      margin-top: 2.5rem;
-    }
-
-    .pricing-card {
-      background: var(--card);
-      border-radius: var(--radius-md);
-      padding: 1.2rem 1.25rem;
-      border: 1px solid rgba(148,163,184,0.35);
-      margin-bottom: 1rem;
-    }
-
-    .pricing-card.highlight {
-      border-color: var(--accent);
-      box-shadow: 0 16px 40px rgba(0,0,0,0.7);
-      background: radial-gradient(circle at top left, rgba(201,169,92,0.16), #020617);
-    }
-
-    .pricing-card p {
-      margin-bottom: 0.75rem;
-    }
-
-    .pricing-card .btn {
-      margin-top: 0.25rem;
-    }
-
-    /* ——— SUPPORT ——— */
-    #support {
-      background: var(--bg-alt);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem 1.5rem;
-      border: 1px solid rgba(148,163,184,0.3);
-    }
-
-    #support p {
-      margin-bottom: 0.75rem;
-    }
-
-    #support a.mail-link {
-      color: var(--accent);
-      text-decoration: underline;
-    }
-
-    #support form {
-      margin-top: 0.75rem;
-      display: grid;
-      gap: 0.75rem;
-    }
-
-    #support label {
-      font-size: 0.85rem;
+    .btn-ghost {
       color: var(--muted);
-    }
-
-    #support input,
-    #support textarea {
-      width: 100%;
-      padding: 0.55rem 0.6rem;
-      border-radius: 8px;
+      background: rgba(17,17,27,0.9);
       border: 1px solid var(--border);
-      background: #020617;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(34,34,48,0.95);
       color: var(--text);
-      font-size: 0.9rem;
+      transform: translateY(-1px);
     }
 
-    #support textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    #support button {
-      justify-self: flex-start;
-      margin-top: 0.25rem;
-    }
-
-    /* ——— FOOTER ——— */
-    footer {
-      border-top: 1px solid rgba(148,163,184,0.3);
-      padding: 1.25rem;
-      text-align: center;
-      font-size: 0.8rem;
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 11px;
       color: var(--muted);
-      margin-top: auto;
+    }
+
+    .hero-meta span {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(7,7,16,0.9);
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .hero-right {
+      background: radial-gradient(circle at top, #25253c, #0d0d18);
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.04);
+      padding: 16px 16px 14px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-right-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .hero-stat-grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    }
+
+    .hero-stat {
+      padding: 10px 11px;
+      border-radius: 14px;
+      background: rgba(8,8,20,0.82);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .hero-stat-label {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+
+    .hero-stat-main {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+
+    .hero-stat-sub {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* SECTION WRAPPERS */
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 14px;
+      gap: 10px;
+    }
+
+    .section-title {
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .section-subtitle {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .section-badge {
+      font-size: 11px;
+      color: var(--muted);
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px dashed rgba(255,255,255,0.10);
+      background: rgba(7,7,16,0.8);
+    }
+
+    /* CATEGORY TABS */
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+      font-size: 12px;
+    }
+
+    .tab {
+      padding: 6px 11px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(10,10,18,0.9);
+      color: var(--muted);
+      cursor: pointer;
+      transition: background 0.16s, color 0.16s, border-color 0.16s, transform 0.12s;
+    }
+
+    .tab.active {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: #ffe7ff;
+      transform: translateY(-1px);
+    }
+
+    .tab:hover {
+      border-color: rgba(255,255,255,0.26);
+    }
+
+    /* PRODUCT GRID */
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 14px;
+    }
+
+    @media (min-width: 680px) {
+      .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1040px) {
+      .product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .product-card {
+      background: var(--card);
+      border-radius: var(--radius-lg);
+      padding: 10px 11px 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.55);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: transform 0.12s, box-shadow 0.16s, border-color 0.16s, background 0.16s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255,255,255,0.16);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.75);
+      background: var(--card-alt);
+    }
+
+    .product-tag-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: var(--muted);
+      gap: 8px;
+    }
+
+    .tier-pill {
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(7,7,15,0.9);
+      border: 1px solid rgba(255,255,255,0.10);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .tier-pill.master {
+      border-color: var(--accent);
+      color: #ffdff9;
+      background: rgba(255,75,192,0.09);
+    }
+
+    .tier-pill.license {
+      border-color: #ffdd7f;
+      color: #ffe9b5;
+      background: rgba(255,204,120,0.08);
+    }
+
+    .product-title {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .product-desc {
+      font-size: 11px;
+      color: var(--muted);
+      min-height: 32px;
+    }
+
+    .product-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .price {
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .price span {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .btn-buy {
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: none;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      background: linear-gradient(135deg, #ff4bc0, #ff9951);
+      color: #14000f;
+      box-shadow: 0 11px 26px rgba(0,0,0,0.6);
+      white-space: nowrap;
+    }
+
+    .btn-buy:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 34px rgba(0,0,0,0.8);
+    }
+
+    .badge-note {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      font-size: 10px;
+      color: var(--muted);
+      padding: 3px 7px;
+      border-radius: 999px;
+      background: rgba(5,5,10,0.78);
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+
+    /* BUNDLES */
+
+    .bundle-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
+
+    @media (min-width: 840px) {
+      .bundle-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .bundle-card {
+      background: radial-gradient(circle at top left, #30223d, #100912);
+      border-radius: 20px;
+      padding: 14px 14px 16px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(255,255,255,0.10);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bundle-label {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .bundle-title {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .bundle-desc {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .bundle-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    .bundle-price {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .bundle-price span {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .bundle-tagline {
+      font-size: 11px;
+      color: #ffdff9;
+      margin-top: 4px;
+    }
+
+    .bundle-bg-accent {
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(255,75,192,0.18), transparent 65%);
+      right: -80px;
+      top: -80px;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    .bundle-card.license .bundle-bg-accent {
+      background: radial-gradient(circle, rgba(255,210,120,0.26), transparent 65%);
+    }
+
+    /* FOOTER */
+
+    footer {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 11px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
     }
 
     footer a {
-      color: var(--accent);
+      color: var(--muted);
       text-decoration: underline;
+      text-decoration-style: dotted;
     }
 
-    /* ——— RESPONSIVE ——— */
-    @media (max-width: 640px) {
-      .hero {
-        padding: 1.8rem 1.3rem;
-      }
-
-      .hero-copy h1 {
-        font-size: 1.7rem;
-      }
-
-      .nav {
-        padding-inline: 1rem;
-      }
-
-      .nav-links {
-        display: none; /* simplify mobile header */
+    @media (max-width: 520px) {
+      .hero-right {
+        order: -1;
       }
     }
   </style>
 </head>
-
 <body>
+
 <div class="page">
-  <!-- ——— HEADER ——— -->
-  <header>
-    <div class="nav">
-      <div class="nav-brand">
-        <div class="logo-pill">LB</div>
-        <div>
-          <div class="nav-title-main">LiveBetter With AI Apps™</div>
-          <div class="nav-title-sub">Use AI to your advantage</div>
-        </div>
-      </div>
-      <div class="nav-links">
-        <a href="#product">Product</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a href="#support">Support</a>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-left">
+      <div class="logo-pill">A</div>
+      <div>
+        <div class="brand-title">LiveBetter With AI Apps™</div>
+        <div class="brand-sub">Courses • Automation • PLR</div>
       </div>
     </div>
+
+    <nav class="nav-links">
+      <a href="#courses">Courses</a>
+      <a href="#bundles">Bundles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#bundles" class="nav-cta">
+      All-Access Bundles
+      <span>Save vs buying individually</span>
+    </a>
   </header>
 
-  <!-- ——— MAIN ——— -->
-  <main>
-    <!-- HERO -->
-    <section class="hero" id="top">
-      <div class="hero-copy">
-        <h1>A complete <span>AI-powered life system</span> you control.</h1>
-        <p class="hero-lead">
-          Use AI to your advantage with a full 10-module Life OS, templates, prompts, tools—
-          and a License Edition that lets you resell the entire system.
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="pill">
+        <span class="pill-badge">AI</span>
+        <span>Credit • Crypto • Stocks • Tax • Travel • Everyday Life</span>
+      </div>
+
+      <h1>
+        Build a <span>10M-ready life</span> with plug-and-play AI courses and license bundles.
+      </h1>
+
+      <p class="hero-sub">
+        Learn how to repair credit, invest with confidence, optimize taxes, hack travel, and automate everyday life using AI.
+        Start with a single course, or grab a complete bundle and launch your whole ecosystem in one move.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#bundles" class="btn-primary">Browse Complete Bundles</a>
+        <a href="#courses" class="btn-ghost">View Individual Courses</a>
+      </div>
+
+      <div class="hero-meta">
+        <span>4-tier structure: Starter • Advanced • Master • License</span>
+        <span>PLR + Resell rights available</span>
+      </div>
+    </div>
+
+    <aside class="hero-right">
+      <div class="hero-right-top">
+        <span>Course overview</span>
+        <span>LiveBetter AI Library</span>
+      </div>
+
+      <div class="hero-stat-grid">
+        <div class="hero-stat">
+          <div class="hero-stat-label">Niches covered</div>
+          <div class="hero-stat-main">6</div>
+          <div class="hero-stat-sub">Credit, Crypto, Stocks, Tax, Travel, Everyday AI</div>
+        </div>
+
+        <div class="hero-stat">
+          <div class="hero-stat-label">Tiers per niche</div>
+          <div class="hero-stat-main">Up to 4</div>
+          <div class="hero-stat-sub">Starter • Advanced • Master • License (PLR)</div>
+        </div>
+
+        <div class="hero-stat">
+          <div class="hero-stat-label">Best entry point</div>
+          <div class="hero-stat-main">Starter Bundle</div>
+          <div class="hero-stat-sub">All starter editions in one place</div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-title">AI-Powered Course Library</div>
+        <div class="section-subtitle">Choose a niche below and pick the tier that matches your goals.</div>
+      </div>
+      <div class="section-badge">Instant digital access via Gumroad</div>
+    </div>
+
+    <div class="tabs" id="course-tabs">
+      <button class="tab active" data-category="credit">Credit Repair</button>
+      <button class="tab" data-category="crypto">Crypto</button>
+      <button class="tab" data-category="stocks">Stocks</button>
+      <button class="tab" data-category="tax">Tax Strategy</button>
+      <button class="tab" data-category="travel">Travel Hacking</button>
+      <button class="tab" data-category="everyday">Everyday AI</button>
+    </div>
+
+    <!-- CREDIT -->
+    <div class="product-grid course-grid" data-category="credit">
+      <article class="product-card">
+        <div class="product-tag-row">
+          <span class="tier-pill">Starter</span>
+          <span>Credit • Disputes</span>
+        </div>
+        <h3 class="product-title">Credit Repair With AI – Starter Edition</h3>
+        <p class="product-desc">
+          Core modules, basic prompts and starter templates to help you begin repairing your credit using AI.
         </p>
-
-        <div class="hero-actions">
-          <button class="btn btn-primary"
-                  onclick="document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })">
-            View Pricing
-          </button>
+        <div class="product-footer">
+          <div class="price">
+            $49.99
+            <span>Entry level credit system</span>
+          </div>
+          <a class="btn-buy" href="https://livebetterai.gumroad.com/l/msfby" target="_blank" rel="noopener">
+            Get Starter
+          </a>
         </div>
+      </article>
 
-        <div class="hero-meta">
-          Starter $39.99 · Full $135.99 · License $239.99
+      <article class="product-card">
+        <div class="product-tag-row">
+          <span class="tier-pill">Advanced</span>
+          <span>Metro-2 • Strategy</span>
         </div>
-      </div>
-    </section>
-
-    <!-- PRODUCT SECTION -->
-    <section id="product">
-      <h2>The System</h2>
-      <p>
-        A complete AI-powered life operating system designed to give you clarity, control, and leverage.
-        10 core modules, battle-tested prompts, and practical tools you can actually use.
-      </p>
-    </section>
-
-    <!-- PRICING SECTION -->
-    <section id="pricing">
-      <h2>Choose Your Edition</h2>
-
-      <!-- STARTER -->
-      <div class="pricing-card">
-        <h3>Starter Edition — $39.99</h3>
-        <p>10 modules · Personal use · Plug-and-play AI workflows.</p>
-        <a href="YOUR_STARTER_LINK_HERE" class="btn btn-primary">
-          Buy Starter – $39.99
-        </a>
-      </div>
-
-      <!-- FULL SYSTEM -->
-      <div class="pricing-card highlight">
-        <h3>Full System Edition — $135.99</h3>
-        <p>All modules · Templates · Prompt packs · Upgrade bonuses.</p>
-        <a href="YOUR_FULL_LINK_HERE" class="btn btn-primary">
-          Buy Full System – $135.99
-        </a>
-      </div>
-
-      <!-- LICENSE EDITION -->
-      <div class="pricing-card">
-        <h3>License Edition — $239.99</h3>
-        <p>Commercial rights · Editable files · Sales assets to resell the entire system.</p>
-        <a href="YOUR_LICENSE_LINK_HERE" class="btn btn-primary">
-          Get License Edition – $239.99
-        </a>
-      </div>
-    </section>
-
-    <!-- SUPPORT SECTION -->
-    <section id="support">
-      <h2>Support</h2>
-      <p>Need help, stuck on setup, or want to talk licensing?</p>
-      <p>
-        Email us directly at
-        <a class="mail-link" href="mailto:support@livebetterwithaiapps.com">
-          support@livebetterwithaiapps.com
-        </a>
-        and we’ll get back to you as soon as possible.
-      </p>
-
-      <!-- Simple mailto form (opens email client) -->
-      <form action="mailto:support@livebetterwithaiapps.com" method="post" enctype="text/plain">
-        <div>
-          <label for="name">Name</label>
-          <input id="name" name="name" required />
+        <h3 class="product-title">Credit Repair With AI – Advanced Edition</h3>
+        <p class="product-desc">
+          Advanced prompts, dispute templates and workflows for deeper, more aggressive credit repair campaigns.
+        </p>
+        <div class="product-footer">
+          <div class="price">
+            $139.99
+            <span>Includes Starter content</span>
+          </div>
+          <a class="btn-buy" href="https://livebetterai.gumroad.com/l/duicuo" target="_blank" rel="noopener">
+            Get Advanced
+          </a>
         </div>
+      </article>
 
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
+      <article class="product-card">
+        <div class="badge-note">Most popular</div>
+        <div class="product-tag-row">
+          <span class="tier-pill master">Master</span>
+          <span>Full system</span>
         </div>
-
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+        <h3 class="product-title">Credit Repair With AI – Master Edition</h3>
+        <p class="product-desc">
+          Complete master-level system with every module, letter pack, tracking table and high-level tip included.
+        </p>
+        <div class="product-footer">
+          <div class="price">
+            $249.99
+            <span>Includes Starter + Advanced</span>
+          </div>
+          <a class="btn-buy" href="https://livebetterai.gumroad.com/l/ydqwsk" target="_blank" rel="noopener">
+            Get Master
+          </a>
         </div>
+      </article>
 
-        <button type="submit" class="btn btn-primary">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© <span id="year"></span> LiveBetter With AI Apps™. All rights reserved.</p>
-    <p>
-      Contact:
-      <a href="mailto:support@livebetterwithaiapps.com">
-        support@livebetterwithaiapps.com
-      </a>
-    </p>
-  </footer>
-</div>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
+      <article class="product-card">
+        <div class="badge-note">PLR + Resell rights</div>
+        <div class="product-tag-row">
+          <span class="tier-pill license">License</span>
+          <span>Business-in-a-box</span>
+        </div>
+        <h3 class="product-title">Credit Repair With AI – License Edition (PLR)</h3>
+        <p class="product-desc">
+          Full PLR package: editable files, resale rights, license docs and everything from the Master Edition.
+        </p>
+        <div class="product-footer">
+          <div class="price">
+            $499.99
+            <span>Keep 100% of your sales</span>
+          </div>
+          <a class="btn-buy" href="https://livebetterai.gumroad.com/l/yyfcx" target="_blank" rel="no
