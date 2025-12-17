@@ -1425,10 +1425,26 @@
 };
 
   
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const LS = {
+    tax_starter: "https://livebetterwithaiapps.lemonsqueezy.com/buy/e9cc61b7-89a9-4f3d-967e-2e16dfc0853d",
+    travel_master: "https://livebetterwithaiapps.lemonsqueezy.com/buy/7cadf6d8-aefd-4788-8be4-ca4aa3150be9",
+    stocks_starter: "https://livebetterwithaiapps.lemonsqueezy.com/buy/145779d8-42ae-4c80-a5d9-e5964151331d",
+    everyday_starter: "https://livebetterwithaiapps.lemonsqueezy.com/buy/a61eb927-4252-42ea-9f29-df46f5a8cdbb",
+    crypto_starter: "https://livebetterwithaiapps.lemonsqueezy.com/buy/aca625d7-1286-452d-9f30-255a5ef3a148",
+    credit_starter: "https://livebetterwithaiapps.lemonsqueezy.com/checkout",
+    bundle_starter: "https://livebetterwithaiapps.lemonsqueezy.com/buy/de8e6dc0-15e5-42df-866a-542e00afc884",
+    bundle_advanced: "https://livebetterwithaiapps.lemonsqueezy.com/buy/793129e3-30a9-4926-83f2-a7d2480ca883",
+    bundle_master: "https://livebetterwithaiapps.lemonsqueezy.com/buy/c5114c4a-b8b3-468d-9766-38b90bd340fe",
+    bundle_license: "https://livebetterwithaiapps.lemonsqueezy.com/buy/354c0de9-d0da-4c58-b097-f30a42380e5b"
+  };
+
   document.querySelectorAll("a[data-ls]").forEach(a => {
     const key = a.getAttribute("data-ls");
     const url = LS[key];
-    if (url && url.trim().length > 0) {
+
+    if (url && url.trim()) {
       a.href = url;
       a.removeAttribute("aria-disabled");
       a.style.pointerEvents = "";
