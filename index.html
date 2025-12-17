@@ -1388,25 +1388,43 @@
      Set your Lemon checkout URLs below
      =============================== */
   const LS = {
-    credit_master: "",
-    crypto_starter: "",
-    crypto_advanced: "",
-    crypto_master: "",
-    stocks_starter: "",
-    stocks_advanced: "",
-    stocks_master: "",
-    tax_starter: "",
-    tax_advanced: "",
-    tax_master: "",
-    travel_master: "",
-    everyday_starter: "",
-    everyday_advanced: "",
-    everyday_master: "",
-    bundle_starter: "",
-    bundle_advanced: "",
-    bundle_master: ""
-  };
+  // Individual products (one page per product, variants handled by Lemon)
+  credit_starter: "https://livebetterwithaiapps.lemonsqueezy.com/checkout",
+  credit_advanced: "https://livebetterwithaiapps.lemonsqueezy.com/checkout",
+  credit_master: "https://livebetterwithaiapps.lemonsqueezy.com/checkout",
+  credit_license: "https://livebetterwithaiapps.lemonsqueezy.com/checkout",
 
+  crypto_starter: "https://livebetterwithaiapps.lemonsqueezy.com/buy/aca625d7-1286-452d-9f30-255a5ef3a148",
+  crypto_advanced: "https://livebetterwithaiapps.lemonsqueezy.com/buy/aca625d7-1286-452d-9f30-255a5ef3a148",
+  crypto_master: "https://livebetterwithaiapps.lemonsqueezy.com/buy/aca625d7-1286-452d-9f30-255a5ef3a148",
+  crypto_license: "https://livebetterwithaiapps.lemonsqueezy.com/buy/aca625d7-1286-452d-9f30-255a5ef3a148",
+
+  stocks_starter: "https://livebetterwithaiapps.lemonsqueezy.com/buy/145779d8-42ae-4c80-a5d9-e5964151331d",
+  stocks_advanced: "https://livebetterwithaiapps.lemonsqueezy.com/buy/145779d8-42ae-4c80-a5d9-e5964151331d",
+  stocks_master: "https://livebetterwithaiapps.lemonsqueezy.com/buy/145779d8-42ae-4c80-a5d9-e5964151331d",
+  stocks_license: "https://livebetterwithaiapps.lemonsqueezy.com/buy/145779d8-42ae-4c80-a5d9-e5964151331d",
+
+  tax_starter: "https://livebetterwithaiapps.lemonsqueezy.com/buy/e9cc61b7-89a9-4f3d-967e-2e16dfc0853d",
+  tax_advanced: "https://livebetterwithaiapps.lemonsqueezy.com/buy/e9cc61b7-89a9-4f3d-967e-2e16dfc0853d",
+  tax_master: "https://livebetterwithaiapps.lemonsqueezy.com/buy/e9cc61b7-89a9-4f3d-967e-2e16dfc0853d",
+  tax_license: "https://livebetterwithaiapps.lemonsqueezy.com/buy/e9cc61b7-89a9-4f3d-967e-2e16dfc0853d",
+
+  travel_master: "https://livebetterwithaiapps.lemonsqueezy.com/buy/7cadf6d8-aefd-4788-8be4-ca4aa3150be9",
+  travel_license: "https://livebetterwithaiapps.lemonsqueezy.com/buy/7cadf6d8-aefd-4788-8be4-ca4aa3150be9",
+
+  everyday_starter: "https://livebetterwithaiapps.lemonsqueezy.com/buy/a61eb927-4252-42ea-9f29-df46f5a8cdbb",
+  everyday_advanced: "https://livebetterwithaiapps.lemonsqueezy.com/buy/a61eb927-4252-42ea-9f29-df46f5a8cdbb",
+  everyday_master: "https://livebetterwithaiapps.lemonsqueezy.com/buy/a61eb927-4252-42ea-9f29-df46f5a8cdbb",
+  everyday_license: "https://livebetterwithaiapps.lemonsqueezy.com/buy/a61eb927-4252-42ea-9f29-df46f5a8cdbb",
+
+  // Bundles
+  bundle_starter: "https://livebetterwithaiapps.lemonsqueezy.com/buy/de8e6dc0-15e5-42df-866a-542e00afc884",
+  bundle_advanced: "https://livebetterwithaiapps.lemonsqueezy.com/buy/793129e3-30a9-4926-83f2-a7d2480ca883",
+  bundle_master: "https://livebetterwithaiapps.lemonsqueezy.com/buy/c5114c4a-b8b3-468d-9766-38b90bd340fe",
+  bundle_license: "https://livebetterwithaiapps.lemonsqueezy.com/buy/354c0de9-d0da-4c58-b097-f30a42380e5b"
+};
+
+  
   document.querySelectorAll("a[data-ls]").forEach(a => {
     const key = a.getAttribute("data-ls");
     const url = LS[key];
