@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>LiveBetter With AI Apps™ – Course Library & Bundles</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="AI-powered credit repair, crypto, stock investing, travel hacking, and real estate courses. Starter, Advanced, Master, and License tiers." />
+  <meta name="description" content="AI-powered credit repair, crypto, stock investing, travel hacking, real estate courses, and the $STACK semiconductor infrastructure model portfolio." />
 
   <style>
     :root {
@@ -716,6 +716,20 @@
       margin-top: 4px;
     }
 
+
+    /* $STACK PROMO */
+    .stack-promo { margin-top: 26px; padding: 20px; border-radius: 22px; background: radial-gradient(circle at top right, rgba(243, 156, 18, 0.25), rgba(12, 12, 18, 0.98)); border: 1px solid rgba(243, 156, 18, 0.35); box-shadow: var(--shadow-soft); display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.9fr); gap: 16px; align-items: center; }
+    html[data-theme="light"] .stack-promo { background: radial-gradient(circle at top right, rgba(243, 156, 18, 0.16), #ffffff); border-color: rgba(243, 156, 18, 0.38); }
+    .stack-promo-kicker { color: #ffca73; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 800; margin-bottom: 6px; }
+    .stack-promo-title { font-size: 22px; margin: 0 0 8px; }
+    .stack-promo-copy { color: var(--text-subtle); font-size: 13px; max-width: 620px; margin: 0; }
+    .stack-promo-meta { display: grid; gap: 8px; font-size: 12px; }
+    .stack-promo-stat { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 14px; padding: 10px; }
+    html[data-theme="light"] .stack-promo-stat { background: rgba(0, 0, 0, 0.03); border-color: rgba(0, 0, 0, 0.06); }
+    .stack-promo-stat strong { display: block; color: #ffca73; font-size: 15px; margin-bottom: 2px; }
+    .stack-promo-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    @media (max-width: 820px) { .stack-promo { grid-template-columns: minmax(0, 1fr); } }
+
     .hidden {
       display: none !important;
     }
@@ -743,8 +757,9 @@
       <nav class="nav-links">
         <a href="#courses">Courses</a>
         <a href="#bundles">Bundles</a>
+        <a href="/stack-index.html">$STACK Index</a>
         <a href="#contact">Contact</a>
-        <a href="#bundles" class="nav-cta">Browse Bundles</a>
+        <a href="/stack-index.html" class="nav-cta">Open $STACK</a>
         <button type="button" class="theme-toggle-btn" id="themeToggle">
           <span class="theme-toggle-icon" id="themeIcon">🌙</span>
           <span id="themeLabel">Dark mode</span>
@@ -766,11 +781,13 @@
           <span class="pill">3-tier structure: Starter • Advanced • Master</span>
           <span class="pill pill-accent">Original educational resources</span>
           <span class="pill">Instant digital access after checkout</span>
+          <span class="pill pill-accent">New: $STACK model portfolio</span>
         </div>
 
         <div class="hero-actions">
           <a href="#bundles" class="btn btn-primary">Browse Complete Bundles</a>
           <a href="#courses" class="btn btn-ghost">View Individual Courses</a>
+          <a href="/stack-index.html" class="btn btn-ghost">View $STACK Index</a>
         </div>
       </div>
 
@@ -791,6 +808,18 @@
       </aside>
     </section>
     <!-- COURSES SECTION -->
+
+    <!-- $STACK INDEX PROMO -->
+    <section class="stack-promo" id="stack-index">
+      <div>
+        <div class="stack-promo-kicker">New premium subscription</div>
+        <h2 class="stack-promo-title">The $STACK Index: Semiconductor Infrastructure Model Portfolio</h2>
+        <p class="stack-promo-copy">A 20-ticker private model portfolio built around the physical bottleneck in AI: advanced packaging, high-purity process systems, automated test, substrates, inspection, and backend semiconductor infrastructure.</p>
+        <div class="stack-promo-actions"><a href="/stack-index.html" class="btn btn-primary">View $STACK Pricing</a><a href="/terms.html" class="btn btn-ghost">Read Terms</a></div>
+      </div>
+      <div class="stack-promo-meta"><div class="stack-promo-stat"><strong>Retail</strong>20-ticker blueprint + rebalance notifications.</div><div class="stack-promo-stat"><strong>Institutional</strong>Data room, allocation CSV, watchlist, field reports, and thesis updates.</div></div>
+    </section>
+
     <section class="section" id="courses">
       <div class="section-header">
         <div>
