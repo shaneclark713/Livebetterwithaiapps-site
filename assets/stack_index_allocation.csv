@@ -1,21 +1,21 @@
-Ticker,Company,Tier,Tier Name,Target Weight,Industrial Role,Why In $STACK,Last Updated
-AMAT,Applied Materials,Tier 1,Anchors - Primary Fab Equipment,10%,The Foundation,Global leader in materials engineering; their equipment is required for nearly every new chip made.,2026-04-27
-KLAC,KLA Corporation,Tier 1,Anchors - Process Control & Yield,10%,Process Control,They provide the inspection and metrology systems that ensure high yields in the fab.,2026-04-27
-AMKR,Amkor Technology,Tier 2,Systems & Assembly Subcontractors,7%,Packaging Lead,The primary OSAT partner for advanced packaging—where the $STACK bottleneck is solved.,2026-04-27
-ASX,ASE Technology,Tier 2,Systems & Assembly Subcontractors,7%,Independent Assembly,The world's largest provider of assembly and test services. Essential for high-volume scale.,2026-04-27
-TER,Teradyne,Tier 2,Systems & Assembly Subcontractors,6%,Testing Infrastructure,They build the automated benches that validate chip performance before shipment.,2026-04-27
-BESIY,BE Semiconductor,Tier 2,Systems & Assembly Subcontractors,5%,Bonding Specialist,Advanced die-attach and bonding equipment necessary for vertical chip stacking.,2026-04-27
-ONTO,Onto Innovation,Tier 3,High-Purity Consumables & Process Validation,5%,Metrology,High-precision 3D inspection tools for advanced nodes and packaging.,2026-04-27
-KLIC,Kulicke & Soffa,Tier 3,High-Purity Consumables & Process Validation,5%,Wire Bonding,They provide the high-speed wiring and placement tools for the assembly floor.,2026-04-27
-CAMT,Camtek,Tier 3,High-Purity Consumables & Process Validation,5%,Inspection,Automated optical inspection systems for high-growth advanced packaging sectors.,2026-04-27
-ACMR,ACM Research,Tier 3,High-Purity Consumables & Process Validation,5%,Wet Processing,Specialized cleaning and polishing equipment to maintain high-purity fab environments.,2026-04-27
-VECO,Veeco Instruments,Tier 3,High-Purity Consumables & Process Validation,5%,Deposition,Laser annealing and ion beam equipment used for advanced semiconductor fabrication.,2026-04-27
-FORM,FormFactor,Tier 3,High-Purity Consumables & Process Validation,5%,Wafer Test,Specialized probe cards that interface between the wafer and the test equipment.,2026-04-27
-COHU,Cohu,Tier 4,Micro-Cap Speedboats,3%,Thermal Testing,Handling systems that manage extreme temperatures during the chip testing process.,2026-04-27
-ICHR,Ichor Holdings,Tier 4,Micro-Cap Speedboats,3%,Fluid Delivery,Gas and chemical delivery systems critical for precision semiconductor manufacturing.,2026-04-27
-ASYS,Amtech Systems,Tier 4,Micro-Cap Speedboats,3%,Thermal Processing,Specialized furnaces and equipment for semiconductor and solar applications.,2026-04-27
-AEHR,Aehr Test Systems,Tier 4,Micro-Cap Speedboats,3%,Reliability Test,"Production-scale burn-in systems, crucial for the SiC and EV markets.",2026-04-27
-INTT,inTEST Corp,Tier 4,Micro-Cap Speedboats,3%,Environmental Systems,Thermal management solutions for semiconductor testing in extreme conditions.,2026-04-27
-TRT,Trio-Tech,Tier 4,Micro-Cap Speedboats,3%,Southeast Asia Hub,Regional reliability testing services and equipment for global chipmakers.,2026-04-27
-SOTK,Sono-Tek,Tier 4,Micro-Cap Speedboats,4%,Ultrasonic Coating,Precision thin-film coating systems for specialized high-tech applications.,2026-04-27
-AXTI,AXT Inc,Tier 4,Micro-Cap Speedboats,3%,Raw Substrates,"Manufacturer of specialized wafer substrates (GaAs, InP) for the foundation of high-performance chips.",2026-04-27
+Ticker,Company,Tier,Tier Name,Target Weight,6-Month Return,12-Month Return,Industrial Role,Why In $STACK,Last Updated
+AMAT,Applied Materials,Tier 1,Anchors,15.00%,67.42%,152.74%,The Foundation,Global leader in materials engineering; their equipment is required for nearly every new chip made.,2026-04-28
+KLAC,KLA Corporation,Tier 1,Anchors,15.00%,49.99%,160.76%,Process Control,They provide the inspection and metrology systems that ensure high yields in the fab.,2026-04-28
+AMKR,Amkor Technology,Tier 2,Core Assembly / Packaging,5.00%,121.89%,308.24%,Packaging Lead,The primary OSAT partner for advanced packaging—where the $STACK bottleneck is solved.,2026-04-28
+ASX,ASE Technology,Tier 2,Core Assembly / Packaging,5.00%,132.16%,243.38%,Independent Assembly,The world's largest provider of assembly and test services. Essential for high-volume scale.,2026-04-28
+TER,Teradyne,Tier 2,Core Assembly / Packaging,5.00%,163.28%,394.77%,Testing Infrastructure,They build the automated benches that validate chip performance before shipment.,2026-04-28
+BESIY,BE Semiconductor,Tier 2,Core Assembly / Packaging,5.00%,62.49%,146.38%,Bonding Specialist,Advanced die-attach and bonding equipment necessary for vertical chip stacking.,2026-04-28
+ONTO,Onto Innovation,Tier 2,Core Assembly / Packaging,5.00%,116.08%,143.93%,Metrology,High-precision 3D inspection tools for advanced nodes and packaging.,2026-04-28
+KLIC,Kulicke & Soffa,Tier 3,Specialized Infrastructure,4.29%,114.92%,156.75%,Wire Bonding,They provide the high-speed wiring and placement tools for the assembly floor.,2026-04-28
+CAMT,Camtek,Tier 3,Specialized Infrastructure,4.29%,52.35%,175.42%,Inspection,Automated optical inspection systems for high-growth advanced packaging sectors.,2026-04-28
+ACMR,ACM Research,Tier 3,Specialized Infrastructure,4.29%,22.39%,138.13%,Wet Processing,Specialized cleaning and polishing equipment to maintain high-purity fab environments.,2026-04-28
+VECO,Veeco Instruments,Tier 3,Specialized Infrastructure,4.29%,65.10%,150.42%,Deposition,Laser annealing and ion beam equipment used for advanced semiconductor fabrication.,2026-04-28
+FORM,FormFactor,Tier 3,Specialized Infrastructure,4.28%,216.31%,370.15%,Wafer Test,Specialized probe cards that interface between the wafer and the test equipment.,2026-04-28
+COHU,Cohu,Tier 3,Specialized Infrastructure,4.28%,88.03%,179.18%,Thermal Testing,Handling systems that manage extreme temperatures during the chip testing process.,2026-04-28
+ICHR,Ichor Holdings,Tier 3,Specialized Infrastructure,4.28%,194.03%,209.82%,Fluid Delivery,Gas and chemical delivery systems critical for precision semiconductor manufacturing.,2026-04-28
+ASYS,Amtech Systems,Tier 4,High-Risk Speedboats,3.00%,110.13%,374.29%,Thermal Processing,Specialized furnaces and equipment for semiconductor and solar applications.,2026-04-28
+AEHR,Aehr Test Systems,Tier 4,High-Risk Speedboats,3.00%,228.54%,960.91%,Reliability Test,"Production-scale burn-in systems, crucial for the SiC and EV markets.",2026-04-28
+INTT,inTEST Corp,Tier 4,High-Risk Speedboats,3.00%,94.93%,167.83%,Environmental Systems,Thermal management solutions for semiconductor testing in extreme conditions.,2026-04-28
+TRT,Trio-Tech,Tier 4,High-Risk Speedboats,2.00%,226.71%,386.80%,Southeast Asia Hub,Regional reliability testing services and equipment for global chipmakers.,2026-04-28
+SOTK,Sono-Tek,Tier 4,High-Risk Speedboats,2.00%,2.18%,16.92%,Ultrasonic Coating,Precision thin-film coating systems for specialized high-tech applications.,2026-04-28
+AXTI,AXT Inc,Tier 4,High-Risk Speedboats,2.00%,941.06%,4717.38%,Raw Substrates,"Manufacturer of specialized wafer substrates (GaAs, InP) for the foundation of high-performance chips.",2026-04-28
