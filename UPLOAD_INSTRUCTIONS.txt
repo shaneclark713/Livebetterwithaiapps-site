@@ -1,0 +1,24 @@
+UPLOAD THESE FILES TO YOUR EXISTING GITHUB REPO
+
+Upload/copy these into the root of your existing Livebetterwithaiapps GitHub repo:
+
+1. stack_subscription_backend/
+2. STACK_BACKEND_INTEGRATION_GUIDE.md
+3. UPLOAD_INSTRUCTIONS.txt
+
+Do not upload a real .env file.
+Only .env.example should be in GitHub.
+
+After uploading, create a NEW Render Web Service using:
+
+Root Directory:
+stack_subscription_backend
+
+Build Command:
+npm install && npm run init-db
+
+Start Command:
+npm start
+
+You are not replacing your current Render Static Site.
+You are adding a separate backend Web Service beside it.
