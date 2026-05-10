@@ -1,0 +1,40 @@
+services:
+  - type: web
+    name: stack-subscription-backend
+    env: node
+    plan: starter
+    buildCommand: npm install && npm run init-db
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: APP_BASE_URL
+        sync: false
+      - key: CLIENT_ORIGIN
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: STACK_RETAIL_PRICE_ID
+        sync: false
+      - key: STACK_INSTITUTIONAL_PRICE_ID
+        sync: false
+      - key: COOKIE_NAME
+        value: stack_session
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        sync: false
+      - key: SMTP_SECURE
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: SMTP_FROM
+        sync: false
